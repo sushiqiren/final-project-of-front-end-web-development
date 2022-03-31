@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="newcss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="newjava.js"></script>    
+    <title>Flower Shop</title>
+</head>
+<body>
+    <header>        
+      <h3>Amberdreamers Garden Flower Shop</h3>
+        <div class="icon">
+            <svg viewBox="0 0 448 512" width="100" title="align-justify">
+                <path d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z" />
+            </svg>
+            <p>Menu</p>
+        </div>
+        <nav class="nav">
+            <ul class="nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#dry-flower" role="button" aria-expanded="false">Dry Flower</a>
+                  <ul class="dropdown-menu flower">
+                    <li><a class="dropdown-item" href="#dry-flower">Dried Flower Bouquet</a></li>
+                    <li><a class="dropdown-item" href="#dry-flower">Dried Flower Wreath</a></li>
+                    <li><a class="dropdown-item" href="#dry-flower">Dried Flower in Vase</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#fresh-flower" role="button" aria-expanded="false">Fresh Flower</a>
+                  <ul class="dropdown-menu flower">
+                    <li><a class="dropdown-item" href="#fresh-flower">Mass of One Flower</a></li>
+                    <li><a class="dropdown-item" href="#fresh-flower">Seasonal Bouquet</a></li>
+                    <li><a class="dropdown-item" href="#fresh-flower">Box of Seasonal Flowers</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#vase-container" role="button" aria-expanded="false">Gifts & Vases</a>
+                  <ul class="dropdown-menu flower">
+                    <li><a class="dropdown-item" href="#vase-container">Earth Vase</a></li>
+                    <li><a class="dropdown-item" href="#vase-container">Coconut & Lime Candle</a></li>
+                    <li><a class="dropdown-item" href="#vase-container">Lover's chocolate box</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#footer" role="button" aria-expanded="false">Contact Us</a>                  
+                </li>               
+            </ul>            
+        </nav>
+        <div class="comment">
+          <svg viewBox="0 0 512 512" width="100" title="comment-dots" id="comment">
+            <path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" />
+          </svg>
+          <p>REVIEW</p>
+        </div>
+        <aside class="side-menu-position side-menu-design" id="side-menu">
+          <header class="side-menu-header">            
+            <svg viewBox="0 0 512 512" width="100" title="window-close" id="menu-close">
+              <path d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-83.6 290.5c4.8 4.8 4.8 12.6 0 17.4l-40.5 40.5c-4.8 4.8-12.6 4.8-17.4 0L256 313.3l-66.5 67.1c-4.8 4.8-12.6 4.8-17.4 0l-40.5-40.5c-4.8-4.8-4.8-12.6 0-17.4l67.1-66.5-67.1-66.5c-4.8-4.8-4.8-12.6 0-17.4l40.5-40.5c4.8-4.8 12.6-4.8 17.4 0l66.5 67.1 66.5-67.1c4.8-4.8 12.6-4.8 17.4 0l40.5 40.5c4.8 4.8 4.8 12.6 0 17.4L313.3 256l67.1 66.5z" />
+            </svg>            
+          </header>
+          <section class="review">
+            <div>
+              <p>Please write your review here</p>
+            <form id="review-form">              
+                <textarea id="review-input" cols="20" rows="10" name="review-input" maxlength="10" placeholder="Enter the review"></textarea>                
+                <button type="submit" id="review-submit" name="button">Submit</button>                            
+            </form>
+            </div>            
+            <div class="review-result">
+              <p>Review Results List</p>
+              <ul id="review-display">
+              
+              </ul>
+            </div>            
+          </section>       
+        </aside>
+        <aside id="cart">
+          <header>
+            <svg viewBox="0 0 576 512" width="100" title="shopping-cart" data-bs-toggle="modal" data-bs-target="#shopping-cart">
+              <path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" />
+            </svg>
+            <p>Shopping Cart</p>
+          </header>
+          <!-- Full screen modal -->
+          <div class="modal fade" id="shopping-cart" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Order List Check</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12">
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Dried Flower Bouquet
+                      </label>
+                    </div>
+
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose Item Number</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  
+                    <div class="col-12">
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Dried Flower Wreath
+                      </label>
+                    </div>
+                  
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose Item Number</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    
+                    <div class="col-12">
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Dried Flower in Vase
+                      </label>
+                    </div>
+
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose Item Number</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>                    
+                      </select>
+                    </div>  
+                  </form>               
+                  <br><br>
+                  <form class="row row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12">
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Mass of One Flower
+                      </label>
+                    </div>
+
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose Item Number</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  
+                    <div class="col-12">
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Seasonal Bouquet
+                      </label>
+                    </div>
+                  
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose Item Number</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    
+                    <div class="col-12">
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Box of Seasonal Flowers
+                      </label>
+                    </div>
+
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose Item Number</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>                    
+                      </select>
+                    </div>  
+                  </form>
+                  <br><br>
+                  <form class="row row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12">
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Earth Vase
+                      </label>
+                    </div>
+
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose Item Number</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  
+                    <div class="col-12">
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Coconut & Lime Candle
+                      </label>
+                    </div>
+                  
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose Item Number</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                    
+                    <div class="col-12">
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="">
+                        Lover's chocolate box
+                      </label>
+                    </div>
+
+                    <div class="col-12">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose Item Number</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>                    
+                      </select>
+                    </div>  
+                  </form>
+                </div>                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary">Proceed</button>
+                </div>
+              </div>
+            </div>
+          </div>          
+        </aside>
+        
+    </header>
+    <main>
+        <section class="mission">
+          <div class="content">
+            <h3>Amberdreamers Garden</h3>
+            <h4>Our mission is committed to the fresh, wonderful and beautiful life for everyone in Melbourne.</h4>
+          </div>          
+        </section>
+  
+        <section id="dry-flower">
+          <div class="dryflower-content">
+            <h2>Valuable Dryflower for Locals</h2>
+            <h4>Empower everyone to current and future new life</h4>
+          </div>
+          <div class="companies">
+            <div class="company">
+                <img src="dryflower1.jpg" />
+                <p>Dried Flower Bouquet</p>
+                <p class="price">$120.00</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Order Now</button>                
+            </div>
+            <div class="company">
+                <img src="dryflower2.jpg" />
+                <p>Dried Flower Wreath</p>
+                <p class="price">$100.00</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Order Now</button>
+            </div>
+            <div class="company">
+                <img src="dryflower3.jpg" />
+                <p>Dried Flower in Vase</p>
+                <p class="price">$150.00</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Order Now</button>
+            </div>            
+          </div>         
+        </section>
+
+        <section id="fresh-flower">
+          <div class="freshflower-content">
+            <h2>Wonderful Fresh Flower</h2>
+            <h4>Four Seasonal Fresh Flower for Locals</h4>
+          </div>
+          <div class="companies1">
+            <div class="company">
+                <img src="freshflower1.jpg" />
+                <p>Mass of One Flower</p>
+                <p class="price">$120.00</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Order Now</button>
+            </div>
+            <div class="company">
+                <img src="freshflower2.jpg" />
+                <p>Seasonal Bouquet</p>
+                <p class="price">$150.00</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Order Now</button>
+            </div>
+            <div class="company">
+                <img src="freshflower3.jpg" />
+                <p>Box of Seasonal Flowers</p>
+                <p class="price">$130.00</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Order Now</button>
+            </div>            
+          </div>         
+        </section>
+  
+        <section id="vase-container">
+          <h2>Gifts & Vases</h2>
+          <div class="vase">
+            <div class="team teammate3">
+              <img src="vase3.jpg" alt="vase3">
+              <div class="explanation">
+                <h3>Earth Vase</h3>
+                <p>Vase in matt ceramics from Knabstrup Keramik with stylish design.</p>                               
+              </div>
+              <p class="price vasep">$69.00</p> 
+              <button class="vase-button" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Order Now</button>              
+            </div>
+            <div class="team teammate4">
+              <img src="gift1.jpg" alt="gift1">
+              <div class="explanation">
+                <h3>Coconut & Lime Candle</h3>
+                <p>Combines tropical coconut, lime and invigorating verbena soothed by luscious vanilla.</p>                                
+              </div>
+              <p class="price vasep">$49.00</p>
+              <button class="vase-button" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Order Now</button>              
+            </div>
+            <div class="team teammate5">
+              <img src="gift2.jpg" alt="gift2">
+              <div class="explanation">
+                <h3>Lover's chocolate box</h3>
+                <p>A dream for gift givers and a treat for artisanal chocolate enthusiasts.</p>                                
+              </div>
+              <p class="price vasep">$65.00</p>
+              <button class="vase-button" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Order Now</button>
+            </div>
+          </div>
+        </section>
+        </main>
+        
+        <footer id="footer">
+          <div class="contact">
+            <p>Amberdreamers Garden Contact</p>
+            <p>yan@gmail.com</p>
+            <p>0455541546541</p>
+          </div>
+          <div class="copyright">
+            <p>&copy Copyright Amberdreamers Garden 2022</p>
+          </div>        
+        </footer>        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Your Order</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>The order has been added to the shopping cart!</p>
+                <p>Thank you for your order!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+</body>
+</html>
