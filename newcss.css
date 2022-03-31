@@ -1,0 +1,366 @@
+body {
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;    
+}
+
+header {
+    background-color: white;
+    position: relative;
+    padding: 10px;
+}
+header img {
+    display: none;
+    
+}
+@media (min-width: 600px) {
+    header img {
+        display: block;
+        position: absolute;
+        width: 120px;
+        height: 120px;        
+        top: 0;
+        left: 20vw;
+    }
+}
+header h3 {
+    color: #a13d3d; 
+    text-align: center;
+    z-index: 300;
+}
+.icon svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 10px;    
+}
+.icon p {
+    font-size: 0.6rem;
+    margin: 0 12px;
+}
+nav {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.4s ease-in;
+}
+nav.visible {
+    top: 100%;
+    opacity: 1;
+    background-color: lightpink;
+}
+nav ul {
+    list-style-type: none;
+    color: rgba(115, 116, 200, 1.0);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    margin: 0 auto;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgba(115, 116, 200, 1.0); 
+}
+
+.flower.dropdown-item {
+    background-color: lightpink;
+}
+
+.comment {
+    position: absolute;
+    right: 10vw;
+    top: 45px;
+}
+.comment svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.comment p {
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+
+.side-menu-position {
+    padding-top: 25px;
+    position: fixed;
+    top: 15vh;    
+    left: 15vw;
+    z-index: 2;
+}
+.side-menu-design {
+    width: 70vw;
+    height: 70vh;
+    background-color: pink;    
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 0.4s ease-in-out;
+    padding: 0;
+}
+.side-menu-header {
+    background-color: pink;
+    position: relative;
+    height: 80px;
+}
+.side-menu-header svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+}
+
+.show-menu {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.review {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 150px;
+}
+#review-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.review-result {
+    margin: 0;
+    padding: 0;
+}
+.review-list {
+    margin: 0;
+    border-radius: 4%;
+    box-shadow: 2px 2px 4px gray;
+    padding: 5px 8px;
+    background-color: white;
+    width: 100%;
+}
+.review-result ul {
+    list-style-type: none;
+}
+
+#cart {
+    position: absolute;
+    right: 30vw;
+    top: 35px;
+}
+#cart svg {
+    width: 30px;
+    height: 30px;   
+    cursor: pointer;
+}
+#cart header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cart header p {
+    margin-top: 0;
+    margin-bottom: 0;    
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+@media (min-width: 600px) {
+    .icon {
+        display: none;
+    }
+    nav {
+        position: static;
+        opacity: 1;        
+    }
+    nav ul {
+        flex-direction: row;        
+    }
+    .comment {
+        position: absolute;
+        right: 10vw;
+        top: 60px;
+    }
+    #cart {
+        position: absolute;
+        right: 15vw;
+        top: 50px;
+    }
+}
+
+.mission{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.content {
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(141, 141, 141, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+.content h4 {
+    padding: 0 150px;    
+}
+
+
+.dryflower-content {
+    color: white;
+    background-color: rgb(243, 157, 157);
+    text-align: center;
+    padding: 10px;
+}
+.dryflower-content h4 {    
+    margin: 0 150px;
+}
+
+.freshflower-content {
+    color: white;
+    background-color: lightpink;
+    text-align: center;
+    padding: 10px;
+}
+.companies1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;    
+    text-align: center;
+    background-color: lightpink;
+}
+.companies1 img {
+    width: 350px;    
+    height: 300px;
+}
+.company {
+    margin: 10px 0;
+}
+.company p {
+    color: white;
+}
+.companies {    
+    display: flex;
+    flex-direction: column;
+    padding: 10px;    
+    text-align: center;
+    background-color: rgb(243, 157, 157);
+}
+.companies img {
+    width: 350px;    
+    height: 300px;
+}
+@media (min-width: 600px) {
+    .companies, .companies1 {        
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;        
+    }
+
+}
+
+#vase-container h2 {
+    color: white;
+    background-color: rgb(243, 157, 157);
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.explanation {
+    background-color: rgba(141, 141, 141, 0.5);
+    width: 250px;
+    height: 120px;
+}
+#vase-container h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;    
+    color: white;
+    padding: 5px;    
+}
+#vase-container p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;    
+    color: white;
+    padding: 3px;    
+}
+.vase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background-color: rgb(243, 157, 157);
+    padding-bottom: 120px;
+   
+}
+@media (min-width: 600px) {
+    .vase {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+.team {
+    width: 350px;
+    height: 350px;    
+}
+.team img {
+    width: 250px;
+    height: 250px;
+}
+button {
+    color: white;
+    background-color: lightpink;
+    border: 3px solid pink;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    color:rgb(243, 157, 157);
+    background-color: white;
+}
+.vase-button {
+    margin: 5px 65px;
+}
+footer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    padding: 20px;
+}
+.contact, .copyright {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0 10px;
+}
+.price {
+    text-decoration: underline;
+    font-style: italic;
+    margin: 10px auto;
+}
+.vasep {
+    width: 250px;
+}
+
